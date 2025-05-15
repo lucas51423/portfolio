@@ -1,67 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Busca de CEP - Design Azul</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Meu Portfólio Profissional</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="cabecalho">
-        <h1>Busca de Endereço por CEP</h1>
-        <p>Digite o CEP e o sistema preencherá automaticamente.</p>
-      </header>
+    <header>
+      <div class="container header-container">
+        <a href="#" class="logo">
+          <i class="fas fa-code"></i>
+          <span>Portfólio</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+          <ul id="nav-list">
+            <li><a href="#">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <main class="principal">
-        <div class="campo">
-          <label for="cep">CEP</label>
-          <input
-            type="text"
-            id="cep"
-            placeholder="Ex: 01001000"
-            maxlength="9"
-            required
-          />
-          <button type="button" class="botao-buscar" id="buscar" onclick="buscarCep()">Buscar</button>
+    <!-- SOBRE MIM -->
+    <section class="about" id="sobre">
+      <div class="container about-container">
+        <img
+          src="WhatsApp Image 2025-05-14 at 19.44.56.jpeg"
+          alt="Sua foto"
+          class="about-img"
+        />
+        <div class="about-text">
+          <h2>LUCAS HENRIQUE DE JESUS</h2>
+          <p>
+            Estou em aprendizado para me tornar um progamador, me dedicando e buscando mais conhecimento para engressar a minha carreira.
+          </p>
         </div>
+      </div>
+    </section>
 
-        <div class="campo">
-          <label for="logradouro">Logradouro</label>
-          <input type="text" id="logradouro" disabled />
+    <!-- PROJETOS -->
+    <section id="projects">
+      <div class="container">
+        <h2>Meus Projetos Desenvolvidos</h2>
+        <p>
+          Confira abaixo uma seleção dos meus trabalhos mais recentes e
+          relevantes, demonstrando minhas habilidades e experiência.
+        </p>
+
+        <div class="projects-container" id="galeriaProjetos">
+        
         </div>
+      </div>
+    </section>
 
-        <div class="campo">
-          <label for="numero">Número</label>
-          <input type="text" id="numero" />
+    <!-- RODAPÉ -->
+    <footer>
+      <div class="container footer-content">
+        <p>© 2025 Meu Portfólio Profissional. Todos os direitos reservados.</p>
+        <p>Entre em contato para oportunidades de trabalho ou colaborações.</p>
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fas fa-envelope"></i></a>
         </div>
+      </div>
+    </footer>
 
-        <div class="campo">
-          <label for="complemento">Complemento</label>
-          <input type="text" id="complemento" />
-        </div>
-
-        <div class="campo">
-          <label for="bairro">Bairro</label>
-          <input type="text" id="bairro" disabled />
-        </div>
-
-        <div class="campo">
-          <label for="cidade">Cidade</label>
-          <input type="text" id="cidade" disabled />
-        </div>
-
-        <div class="campo">
-          <label for="uf">UF</label>
-          <input type="text" id="uf" disabled maxlength="2" />
-        </div>
-      </main>
-
-      <footer class="rodape">
-        <p>© 2024 - Consulta de CEP | Design Azul</p>
-      </footer>
-    </div>
-
-    <script src="script.js"></script>
+    <!-- JS -->
+    <script src="js/script.js"></script>
   </body>
 </html>
