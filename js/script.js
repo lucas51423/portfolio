@@ -15,7 +15,7 @@ const projetos = [
 
   {
     titulo: "Buscar Perfil no GitHub",
-    descricao: "digite o nome do usuário",
+    descricao: "Um site que busca a imagem de perfil do GitHub com base no nome de usuário informado, desenvolvido com JavaScript moderno.",
     imagem: "https://www.bleepstatic.com/content/hl-images/2022/04/08/GitHub__headpic.jpg",
     link: "projetos/busca_github/index.html"
 }

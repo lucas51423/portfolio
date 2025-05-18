@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #655292;
+  --primary-color: #363538;
   --secondary-color: #54528b;
   --accent-color: #14275e;
-  --dark-color: #2d2d2d;
+  --dark-color: #0c0b0b;
   --light-color: #8c9eaf;
   --text-color: #2b2b2b;
 }
@@ -122,7 +122,7 @@ nav a:hover::after {
 /* SOBRE MIM */
 .about {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #bdc1cf, #e6e9f5);
+  background: linear-gradient(135deg, #121313, #181717);
 }
 
 .about-container {
@@ -150,14 +150,14 @@ nav a:hover::after {
 .about-text h2 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: var(--secondary-color);
-  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  font-family: ;
 }
 
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #444;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -173,14 +173,14 @@ nav a:hover::after {
 
 /* PROJETOS */
 #projects {
-  background-color: #8c9eaf;
+  background-color: #212222;
   padding: 4rem 0;
 }
 
 #projects h2 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
-  color: var(--dark-color);
+  color: white;
   font-family: "Space Grotesk", sans-serif;
   text-align: center;
 }
@@ -189,7 +189,7 @@ nav a:hover::after {
   max-width: 700px;
   margin: 0 auto 3rem;
   text-align: center;
-  color: #555;
+  color: white;
 }
 
 .projects-container {
@@ -199,12 +199,12 @@ nav a:hover::after {
 }
 
 .project-card {
-  background: white;
+  background: rgb(15, 15, 15);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #eee;
+  border: 1px solid rgb(15, 15, 15);
   display: flex;
   flex-direction: column;
 }
@@ -231,7 +231,7 @@ nav a:hover::after {
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.4rem;
   margin-bottom: 0.75rem;
-  color: var(--dark-color);
+  color: white;
 }
 
 .project-info p {
