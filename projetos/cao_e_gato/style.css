@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cabeçalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #313131;
+    height: 9vh;
+    position: sticky;
+    top: 0%;
+}
+.logo{
+    color: #ffc800;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+#links{
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+}
+#inicio{
+    color: white;
+    transition-property: color;
+    transition: color 0.4s;
+}
+#inicio:hover{
+    color: #ffc800;
+}
+#serviços{
+    color: white;
+    transition-property: color ;
+    transition: color 0.4s;
+}
+#serviços:hover{
+    color: #ffc800;
+}
+#tratamentos{
+    color: white;
+    transition-property: color ;
+    transition: color 0.4s;
+}
+#tratamentos:hover{
+    color: #ffc800;
+}
+#veterinarios{
+    color: white;
+    transition-property: color ;
+    transition: color 0.4s;
+}
+#veterinarios:hover{
+    color: #ffc800;
+}
+.sobre{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: #ffc800;
+    height: 100vh;
+}
+.apresentaçao{
+    background: #ffc800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+    color: #fff;
+    font-family: arial, sans-serif;
+}
+.introduçao{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-size: 18px;
+}
+#linhaum{
+    padding-left: 25px;
+}
+#linhadois{
+    padding-left: 25px;
+}
+#linhatres{
+    padding-left: 5px;
+}
+#linhacin{
+    display: flex;
+    justify-content: center;
+}
+#botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+#agende{
+    color: #fff;
+    font-size: 15px;
+    background: #40b8e0;
+    width: 170px;
+    height: 40px;
+    border: #40b8e0 1px solid;
+    border-radius: 5px;
+}
+#agende{
+    background-color: #40b8e0;
+    border: #40b8e0;
+    transition-property: background-color, border;
+    transition: 0.5s;
+}
+#agende:hover{
+    background-color: #4682B4;
+    border: #4682B4;
+}
+#conheça{
+    color: #fff;
+    font-size: 15px;
+    background: #ffc800;
+    width: 225px;
+    height: 40px;
+    border: #fff 1px solid;
+    border-radius: 5px;
+}
+#conheça{
+    background-color: #ffc800;
+    color: white;
+    transition-property: background-color, color;
+    transition: background-color, color 0.5s;
+}
+#conheça:hover{
+    background-color: white;
+    color: #000;
+}
+.sessao{
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 60px;
+}
+@keyframes pulsar{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1.1);}
+
+}
+#video{
+    height:300px;
+    width:500px;
+    border-radius: 5%;
+    transition: transform 0.5s ease;
+}
+#video:hover{
+    animation:pulsar 0.5s forwards;
+}
+#serv{
+    display: flex;
+    padding: 25px;
+    font-size: 20px;
+    padding-left: 42px;
+}
+#introdois{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#pum{
+    padding-left: 15px;
+}
+#pdois{
+    padding-left: 5px;
+}
+#ptres{
+    padding-left: 3px;
+}
+#pquatro{
+    padding-left: 5px;
+}
+#saiba{
+    display: flex;
+    justify-content: center;
+    padding: 23px;
+}
+#mais{
+    font-size: 17px;
+    height: 38px;
+    width: 125px;
+    background-color: #ffc800;
+    border: 1px #ffc800 solid;
+    border-radius: 5px;
+}
+#mais{
+    background-color: #ffc800;
+    transition-property: background-color, color;
+    transition: 0.5s;
+}
+#mais:hover{
+    background-color: #000;
+    color: #ffc800;
+}
+.tratamentos{
+    height: 100vh;
+    background: #ffc800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: arial, sans-serif;
+    color: #333;
+    gap: 30px;
+}
+#imagenstext{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#conheçanosso{
+    font-size: 22px;
+}
+#tratadispo{
+    font-size: 40px;
+}
+#imgone{
+    border-radius: 15px;
+    color: #fff;
+    background: #313131;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    35% {transform: translateY(-10px);}
+}
+#imgone{
+    transition: transform 0.1s ease-in-out;
+}
+#imgone:hover{
+    transform: translateY(-10px);
+}
+#imm1{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#textone{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+#imgtwo{
+    border-radius: 15px;
+    color: #fff;
+    background: #313131;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    35% {transform: translateY(-10px);}
+}
+#imgtwo{
+    transition: transform 0.1s ease-in-out;
+}
+#imgtwo:hover{
+    transform: translateY(-10px);
+}
+#imm2{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#texttwo{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#titulotexttwo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#trat{
+    padding-left: 14px;
+}
+#linhastexttwo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#odon{
+    padding-left: 26px;
+}
+#imgthree{
+    border-radius: 15px;
+    color: #fff;
+    background: #313131;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    35% {transform: translateY(-10px);}
+}
+#imgthree{
+    transition: transform 0.1s ease-in-out;
+}
+#imgthree:hover{
+    transform: translateY(-10px);
+}
+#imm3{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#textthree{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#titulotextthree{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#consul{
+    padding-left: 10px;
+}
+#linhastextthree{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#especializados{
+    padding-left: 37px;
+}
+.funcionarios{
+    height: 100vh;
+    font-family: arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    font-family: arial, sans-serif;;
+}
+#profi{
+    font-size: 20px;
+    font-family: arial, sans-serif;;
+}
+#perfilfotos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.primeirovett{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 15px;
+}
+#clinicogeral{
+    border-radius: 15px;
+}
+@keyframes pulsar{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1.1);}
+}
+#tiktok1{
+    transition: transform 0.5 ease;
+}
+#tiktok1:hover{
+    animation:pulsar 0.5s forwards;
+}
+#instafram1{
+    transition: transform 0.5 ease;
+}
+#instagram1:hover{
+    animation:pulsar 0.5s forwards;
+}
+#twitter1{
+    transition: transform 0.5 ease;
+}
+#twitter1:hover{
+    animation:pulsar 0.5s forwards;
+}
+#linkedin1{
+    transition: transform 0.5 ease;
+}
+#linkedin1:hover{
+    animation:pulsar 0.5s forwards;
+}
+.segundovett{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+ }
+ #dermatologista{
+     border-radius: 15px;
+ }
+ .terceirovett{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+ }
+ #cirurgiao{
+     border-radius: 15px;
+ }
+ .finalpag{
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #ffc800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+ }
+ #deixeseu{
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-top: 40px;
+ }
+ .caixadeinput{
+    background: #313131;
+    height: 445px;
+    width: 850px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.primeirainputt{
+    display: flex;
+    justify-content: center;
+}
+#nome{
+    width: 800px;
+    height: 33px;
+    color: #fff;
+    border-radius: 5px;
+    border: #fff 1px solid;
+    padding-left: 10px;
+    background: #515151;
+    transition: border-color 0.3s ease-in-out;
+}
+#nome:hover{
+    border-color: #ffc800   ;
+}
+.segundainputt{
+    display: flex;
+    justify-content: center;
+}
+#email{
+    width: 800px;
+    height: 33px;
+    color: #fff;
+    border-radius: 5px;
+    border: #fff 1px solid;
+    padding-left: 10px;
+    background: #515151;
+    transition: border-color 0.3s ease-in-out;
+}
+#email:hover{
+    border-color: #ffc800;
+}
+.terceirainputt{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#mensagem{
+    width: 800px;
+    height: 130px;
+    color: #fff;
+    border-radius: 5px;
+    border: #fff 1px solid;
+    padding-left: 10px;
+    background: #515151;
+    transition: border-color 0.3s ease-in-out;
+}
+#mensagem:hover{
+    border-color: #ffc800;
+}
+.ultmobott{
+    display: flex;
+    justify-content: center;
+}
+#botaoenviar{
+    width: 800px;
+    height: 33px;
+    padding-left: 10px;
+    background: #ffc800;
+    border: #313131;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+#botaoenviar:hover{
+    background-color: #c59b01
+}
+.rodape{
+    background-color: #313131;
+    color: #fff;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
